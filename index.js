@@ -1,5 +1,5 @@
 const express = require('express');
-const characterRoutes = require('./routes/routes');
+const characterRoutes = require('./src/characters/routes');
 require('dotenv').config();
 
 const app = express();
