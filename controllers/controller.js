@@ -1,5 +1,5 @@
-const pool = require('../../db')
-const queries = require('./queries')
+const pool = require('../db')
+const queries = require('../src/characters/queries')
 
 const getCharacters = (req, res) => {
     pool.query(queries.getCharacters,(error,results)=>{
