@@ -2,7 +2,7 @@
     "version"; 2,
     "builds"; [
       {
-        "src": "./server",
+        "src": "./serverjndcaj",
         "use": "@vercel/node"
       }
     ],
