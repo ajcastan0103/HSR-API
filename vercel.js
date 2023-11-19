@@ -8,8 +8,8 @@
     ],
     "routes"; [
       {
-        "src": "/characters(.*)",
-        "dest": "/"
+        "src": "/characters",
+        "dest": "/routes.js"
       }
     ]
 }
