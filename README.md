@@ -20,7 +20,7 @@ A fan-made Rest API that gets character info from the game Honkai Star Rail by m
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/your-repository.git
+   git clone https://github.com/ajcastan0103/HSR-API.git
 
 2. Install dependencies:
    ```bash
