@@ -33,8 +33,41 @@ const getCharacterByName = (req, res) => {
     });
 };
 
+const getCharactersByElement = (req, res) => {
+    const element = req.params.element;
+    pool.query(queries.getCharactersByElement, [element], (error, results) => {
+        if (error) throw error;
+        res.status(200).json(results.rows);
+    });
+};
+
+const getCharactersByPath = (req, res) => {
+    const path = req.params.path;
+    pool.query(queries.getCharactersByPath, [path], (error, results) => {
+        if (error) throw error;
+        res.status(200).json(results.rows);
+    });
+};
+
+const getCharactersByRarity = (req, res) => {
+    const param = req.params.rarity;
+    const rarity = parseInt(param);
+
+    if (isNaN(rarity)) {
+        return res.status(400).json({ error: 'Invalid rarity parameter. Must be a valid integer.' });
+    }
+
+    pool.query(queries.getCharactersByRarity, [rarity], (error, results) => {
+        if (error) throw error;
+        res.status(200).json(results.rows);
+    });
+};
+
 module.exports= {
     getCharacters,
     getCharacterById,
     getCharacterByName,
+    getCharactersByElement,
+    getCharactersByPath,
+    getCharactersByRarity,
 };
