@@ -14,6 +14,9 @@ A fan-made Rest API that gets character info from the game Honkai Star Rail by m
 - `GET /api/v1/characters`: Get all characters.
 - `GET /api/v1/characters/:id`: Get a character by ID.
 - `GET /api/v1/characters/:name`: Get a character by name.
+- `GET /api/v1/characters/element/:element`: Get a character by element.
+- `GET /api/v1/characters/path/:path`: Get a character by path name.
+- `GET /api/v1/characters/rarity/:rarity`: Get a character by rarity(4 or 5).
 
 ## Local Development
 
