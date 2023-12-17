@@ -63,6 +63,13 @@ const getCharactersByRarity = (req, res) => {
     });
 };
 
+const getCharactersByDate = (req, res) => {
+    pool.query(queries.getCharactersByDate, (error, results) => {
+        if (error) throw error;
+        res.status(200).json(results.rows);
+    });
+};
+
 module.exports= {
     getCharacters,
     getCharacterById,
@@ -70,4 +77,6 @@ module.exports= {
     getCharactersByElement,
     getCharactersByPath,
     getCharactersByRarity,
+    getCharactersByDate,
+    
 };
