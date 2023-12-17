@@ -11,13 +11,13 @@ A fan-made Rest API that gets character info from the game Honkai Star Rail by m
 
 ## API Endpoints
 
-- `GET /api/v1/characters`: Get all characters.
-- `GET /api/v1/characters/:id`: Get a character by ID.
-- `GET /api/v1/characters/:name`: Get a character by name.
-- `GET /api/v1/characters/element/:element`: Get characters by element.
-- `GET /api/v1/characters/path/:path`: Get characters by path name.
-- `GET /api/v1/characters/rarity/:rarity`: Get characters by rarity(4 or 5).
-
+- `GET https://hsr-api.vercel.app/api/v1/characters`: Get all characters.
+- `GET https://hsr-api.vercel.app/api/v1/characters/:id`: Get a character by ID.
+- `GET https://hsr-api.vercel.app/api/v1/characters/:name`: Get a character by name.
+- `GET https://hsr-api.vercel.app/api/v1/characters/element/:element`: Get characters by element.
+- `GET https://hsr-api.vercel.app/api/v1/characters/path/:path`: Get characters by path name.
+- `GET https://hsr-api.vercel.app/api/v1/characters/rarity/:rarity`: Get characters by rarity(4 or 5).
+  
 ## Local Development
 
 1. Clone the repository:
